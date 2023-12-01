@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zapatillas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    }
+
+    header {
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 1em;
+    }
+
+    nav {
+        background-color: black;
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+        margin: 0 1em;
+        font-weight: bold;
+    }
+
+    main {
+        padding: 2em;
+        text-align: center;
+    }
+
+    footer {
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 1em;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .img1 {
+        width: 500px;
+        height: 300px;
+    }
+
+    .img2 {
+        width: 300px;
+        height: 300px;
+        margin-right: 10px;
+    }
+
+    .img3 {
+      width: 400px;
+      height: 500px;
+    }
+
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  </style>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-cente">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="abrajan.html">Zapatos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Zapatillas</h1>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Nike Dunk Low Retro - $115
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <img class="img1" src="img/zapato3.png" alt="Nike Dunk Low Retro">
+            <p>El Nike Dunk Low Retro, creado para la cancha pero que luego dominó las calles...</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Nike Dunk Low Retro Premium - $120
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <img class="img1" src="img/zapatos2.png" alt="Nike Dunk Low Retro Premium">
+            <p>El ícono del básquetbol de los 80 está de vuelta con detalles clásicos...</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Ja 1 "Guava Ice" - $120
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <img class="img1" src="img/zapatos5.png" alt="Ja 1 'Guava Ice'">
+            <p>Ja Morant se convirtió en la superestrella que es hoy clavando tiros en aros torcidos...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <section>
+      <p>Pagina de Prueba 2023 - David Abrajan</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
